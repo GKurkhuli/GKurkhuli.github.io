@@ -1,0 +1,63 @@
+
+h1,h5{
+    color: green;
+
+}
+
+
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color:rgb(167, 214, 236);
+    text-align: center;
+    line-height:0px;
+    border: 2px solid rgb(102, 23, 23);
+    margin-top: 30px;
+   
+}
+
+main{
+   margin-bottom: 15px;
+}
+
+header{
+    text-align: left;
+    padding: 10px;
+    width: 395px;
+    margin-top: -45px;
+    margin-left: 10px;
+    line-height: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: unset;
+    background-color: rgb(167, 214, 236);
+}
+
+.boxes{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#fName{
+    background-color: red;
+}
+#lName{
+    background-color: green;
+}
+#Biography{
+    width: 250px;
+    height: 200px;
+}
+button{
+    background-color: green;
+    color: rgb(70, 129, 131);
+}
+
+.textBox{
+    width: 125px;
+    height: 13px;
+    resize: none;
+    overflow: hidden;
+    font-size: 13px;
+}
