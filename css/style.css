@@ -24,6 +24,7 @@ html
     font-size: 130%;
     width: 150px;
     height: 50px;
+    border: none;
     border-radius: 25px;
     text-align: center;
     color: #fff;
@@ -198,7 +199,7 @@ table{
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-    max-height: 254px;
+    height: 254px;
     width: 658px;
     overflow: auto;
 }
@@ -207,8 +208,8 @@ tr{
     display: block;
 
     height: 54px;
-    width: 100%;      /*doublecheck*/
-    border-radius: 27px; /*depends on height*/
+    width: 100%; 
+    border-radius: 27px;
     border: none;
     font-size: 100%;
     font-weight: normal;
@@ -219,6 +220,10 @@ tr{
     color:  #bac4de;
 }
 /*Text color: Offline  #bac4de, Online #909dbb Online Hover #5265e8*/
+
+td{
+    position: relative;
+}
 .online{
     color:  #909dbb
 }
@@ -257,8 +262,10 @@ tr{
     background-color: #5265e8;
     text-align: center;
     color: #ffffff;
-    margin: 8px 12px 8px 0;
+    position: absolute;
+    top: 6px;
     outline: none;
+    border: none;
 }
 
 

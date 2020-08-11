@@ -19,47 +19,34 @@
         width: 94%;
         font-size: 90%;
     }
-
-    .online .status,
-    .status{
-        width: 20px;
-     }
-    .online .status::before,
-    .status::before{ content: "O";}
-       
-
-}
-@media(max-width: 600px){
-    table{
-        margin-left: 0;
-        width: 100%;
-    }
     tr{
+        width: 600px;
         height: 40px;
         border-radius: 20px;
     }
-    .transferB{
-        width: 80px;
-        height: 20px;
-        border-radius: 10px;
+    .online:hover{
+        box-shadow: 0 7px 21px 0 #eaeaeb;
+        border-radius: 27px;
     }
-    .avatar{
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
-        margin:5px 10px 5px 10px;
-    }
+    .name{width: 155px;}
+    .status{width: 65px;}
     .serving-not{
-        margin-left: 10px;
+        width: 85px;
+        margin-left: 30px;
     }
-    .department
-    {
-        width: 130px;
+    .transferB{
+        width: 125px;
+        height: 34px;
+        border-radius: 17px;
+        top: 3px;
     }
-   
 }
 
 @media(max-width: 500px){
+    table{
+        margin: 0;
+        width: 100%;
+    }
     html{font-size: 14px;}
     .Transfer{
         width: 95%;

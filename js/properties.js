@@ -146,7 +146,4 @@ $('tr').hover(
         }
     }
 );
-$(document).on("classAdded", "tr", function(){
-        console.log('worked');
-});
 });
