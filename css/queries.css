@@ -1,0 +1,89 @@
+@media(max-width: 800px){
+    .Transfer{
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
+    
+    #search,
+    #agentHeader
+    {
+        margin-left: 4%;
+    }    
+    #search{ width: 95%;}
+    #search-icon{ left: 2%; }
+    
+    table{
+        margin-left:3%;
+        width: 94%;
+        font-size: 90%;
+    }
+
+    .online .status,
+    .status{
+        width: 20px;
+     }
+    .online .status::before,
+    .status::before{ content: "O";}
+       
+
+}
+@media(max-width: 600px){
+    table{
+        margin-left: 0;
+        width: 100%;
+    }
+    tr{
+        height: 40px;
+        border-radius: 20px;
+    }
+    .transferB{
+        width: 80px;
+        height: 20px;
+        border-radius: 10px;
+    }
+    .avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin:5px 10px 5px 10px;
+    }
+    .serving-not{
+        margin-left: 10px;
+    }
+    .department
+    {
+        width: 130px;
+    }
+   
+}
+
+@media(max-width: 500px){
+    html{font-size: 14px;}
+    .Transfer{
+        width: 95%;
+        height: 450px;
+        text-align: center;
+    }
+
+    #searchbox input{width: 70%;}
+    .conversation{font-size: 100%;}
+    #searchbox input{
+        font-size: 90%;
+    }
+    .TransferButton button{
+        width: 130px;
+        height: 44px;
+        border-radius: 22px;
+    }
+    
+    .TransferButton button:hover{
+        width: 147px;
+        height: 50px;
+        border-radius: 25px;
+        margin-top: -5px;
+        margin-left: -15px;
+    }
+
+}

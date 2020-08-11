@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <title>First try</title>
-        <link rel="stylesheet" type="text/css" href="design.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
+       <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <title>transfer bar</title>
     </head>
 
     <body>
+        <div class="js-TransferButton">
+            <div class="TransferButton">
+                <Button >Transfer</Button>
+            </div>
+        </div>
+        <div class="js-transfer">
+            <div class="Transfer">
+                <header class="Rectangle-347">
+                    <p class="conversation">Transfer the conversation</p>
+                    <input type="image" src="imgs/0a6e8b98a0b8391aa544d471c5a19918.png" alt="">
+                </header> 
+
+                <main> 
+                    <section id="search">
+                        <div id="search-icon">
+                            <img src="imgs/search-icon.jpg" alt="">
+                        </div>
+                        <div id="searchbox">
+                            <input type="text" placeholder="Search for an agent">
+                        </div>
+                        <div id="checkAttend">
+                            <button></button>
+                        </div>
+                    </section>
+                    
+                    <section class="agent">
+                        <div id="agentHeader">
+                            <p>Agents</p>
+                        </div>
         
-       
-        <header>
-            <h1>FILL IN THE FIELDS</h1>
-        </header>
-        <main>           
-            <h5 class="boxes">First Name:</h5>
-            <input type="text" class="textBox" id="fName"/>
-
-            <h5 class="boxes">Last Name:</h5>
-            <input type="text" class="textBox" id="lName"/>
-
-            <h5 class="boxes">Phone</h5>
-            <input type="number" placeholder="123-456-789" class="textBox"/>
-
-            <h5 class="boxes">Email:</h5>
-            <input type="email" class="textBox"/>
-
-            <h5 class="boxes">Address:</h5>
-            <input type="text" class="textBox"/>
-
-            <h5 class="boxes">Biography Information:</h5>
-            <textarea id="Biography"/></textarea>
-
-            <h5 class="boxes">Password:</h5>
-            <button id="register">REGISTER</button>
-        </main>
-
+                        <div id="agentStatusName"><!--Create table-->
+                            <table>
+                                <tbody id="agentsTable"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/properties.js"></script>
     </body>
-
 </html>
