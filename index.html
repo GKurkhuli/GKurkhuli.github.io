@@ -10,42 +10,33 @@
     </head>
 
     <body>
-        <div class="js-TransferButton">
-            <div class="TransferButton">
-                <Button >Transfer</Button>
-            </div>
-        </div>
-        <div class="js-transfer">
-            <div class="Transfer">
-                <header class="Rectangle-347">
-                    <p class="conversation">Transfer the conversation</p>
-                    <input type="image" src="imgs/0a6e8b98a0b8391aa544d471c5a19918.png" alt="">
-                </header> 
+        <Button class="TransferButton js-TransferButton">Transfer</Button><!--Remove it if js wont work, add parent div-->
 
-                <main> 
-                    <section id="search">
-                        <div id="search-icon">
-                            <img src="imgs/search-icon.jpg" alt="">
-                        </div>
-                        <div id="searchbox">
-                            <input type="text" placeholder="Search for an agent">
-                        </div>
-                        <div id="checkAttend"><button></button></div>
-                    </section>
-                    
-                    <section class="agent">
-                        <div id="agentHeader">
-                            <p>Agents</p>
-                        </div>
-        
-                        <div id="agentStatusName"><!--Create table-->
-                            <table>
-                                <tbody id="agentsTable"></tbody>
-                            </table>
-                        </div>
-                    </section>
-                </main>
-            </div>
+        <div class="Transfer js-transfer">
+            <header class="Rectangle-347">
+                <p class="conversation">Transfer the conversation</p>
+                <input type="image" src="imgs/0a6e8b98a0b8391aa544d471c5a19918.png" alt="">
+            </header> 
+
+            <main> 
+                <section class="search">
+                    <img class="search-icon" src="imgs/search-icon.jpg" alt="">
+                    <input class="searchbox" id = "searchbox_main" type="text" placeholder="Search for an agent">
+                    <button class = "OnOrOffLine" id="checkAttend"></button>
+                </section>
+                
+                <section class="agent">
+                    <div class="agentHeader">
+                        <p>Agents</p>
+                    </div>
+    
+                    <div id="agentStatusName"> <!--Create table-->
+                        <table>
+                            <tbody id="agentsTable"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/properties.js"></script>

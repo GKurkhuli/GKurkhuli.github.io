@@ -6,13 +6,13 @@
         width: 90%;
     }
     
-    #search,
-    #agentHeader
+    .search,
+    .agentHeader
     {
         margin-left: 4%;
     }    
-    #search{ width: 95%;}
-    #search-icon{ left: 2%; }
+    .search{ width: 95%;}
+    .search-icon{ left: 2%; }
     
     table{
         margin-left:3%;
@@ -54,18 +54,18 @@
         text-align: center;
     }
 
-    #searchbox input{width: 70%;}
     .conversation{font-size: 100%;}
-    #searchbox input{
+    .searchbox{
         font-size: 90%;
+        width: 70%;
     }
-    .TransferButton button{
+    .TransferButton{
         width: 130px;
         height: 44px;
         border-radius: 22px;
     }
     
-    .TransferButton button:hover{
+    .TransferButton:hover{
         width: 147px;
         height: 50px;
         border-radius: 25px;

@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
     
     $('.js-TransferButton').click(function() {
-        document.querySelector("#searchbox input").value = "";
+        document.querySelector("#searchbox_main").value = "";
         for(var i = 0; i < agents; i++)
         {
             document.querySelector("#row_" + i).style.display = "block";
@@ -83,7 +83,7 @@ function randomStatus()
 ///////////////////////////////////////////////
     /*---SEARCH AGENTS---*/
 
-searchBox = document.querySelector('#searchbox input');
+searchBox = document.querySelector('#searchbox_main');
 
 searchBox.oninput = function(){
     var value = searchBox.value.toLowerCase();
@@ -92,16 +92,18 @@ searchBox.oninput = function(){
         var row = document.querySelector('#row_' + i);
         var name = document.querySelector('#row_' + i + ' .name');
         if(name.innerText.toLowerCase().includes(value))
-            row.style.display = 'block';
+           // row.style.display = 'block';
+            $('#row_' + i).show("fast");
         else
-            row.style.display = 'none';
+           // row.style.display = 'none';
+            $('#row_' + i).hide("fast");
     }
 }
 
 
 //////////////////////////////////////////////
     /*---Online/Offline/All---*/
-$('#checkAttend button').click(function(){    
+$('#checkAttend').click(function(){    
     if(button.style.backgroundColor === 'rgb(255, 255, 255)')
     {
         button.style.backgroundColor = "rgb(46, 202, 23)";
@@ -123,7 +125,7 @@ var statusUpdateTime = 30;//update user status every 30 sec;
 var agents = Math.floor(Math.random()*16)+5; //agent number varies from 5 to 20
 var elemntID,searchBox;
 
-var button = document.querySelector("#checkAttend button");
+var button = document.querySelector("#checkAttend");
 button.style.backgroundColor = 'rgb(255, 255, 255)';
 
 
@@ -135,14 +137,19 @@ $('tr').hover(
     function(){
         elemntID ="#" + this.id + "_";//tr id is row_i when last td id is row_i_
         if(document.querySelector("#"+this.id).classList.contains("online")){
-            document.querySelector(elemntID +" .transferB").style.display = "block";
-            document.querySelector(elemntID +" .serving-not").style.display="none";
+           // document.querySelector(elemntID +" .transferB").style.display = "block";
+            //document.querySelector(elemntID +" .serving-not").style.display="none";
+            $(elemntID +" .transferB").show("fast");
+            $(elemntID +" .serving-not").hide("fast");
+
         }
     },
     function(){
         if(document.querySelector("#"+this.id).classList.contains("online")){
-            document.querySelector(elemntID +" .transferB").style.display="none";
-            document.querySelector(elemntID +" .serving-not").style.display="block";
+           // document.querySelector(elemntID +" .transferB").style.display="none";
+            //document.querySelector(elemntID +" .serving-not").style.display="block";
+            $(elemntID +" .transferB").hide("fast");
+            $(elemntID +" .serving-not").show("fast");
         }
     }
 );
