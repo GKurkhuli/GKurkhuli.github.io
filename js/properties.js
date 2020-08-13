@@ -41,7 +41,8 @@ function agentTable(){
             '<td class="status"></td>'+
             '<td class="department">'+ departments[Math.floor(Math.random()*departments.length)] +'</td>';               
 
-        var tdButton = '<button class="transferB">Transfer</button>';
+        var tdButton = '<button class="transferB" id = "row_' + i + '_B">Transfer</button>';
+                        //each button has an id so it will be easier for back developer to connect users (it can be changed easy)
         if(status === "offline"){
 
 
