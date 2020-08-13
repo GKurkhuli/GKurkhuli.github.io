@@ -63,18 +63,22 @@ function randomStatus()
     for(var i = 0; i < agents;  i++)
     {
         tr = document.querySelector('#row_'+i);
-        service = document.querySelector('#row_'+i+'_ div' ); //get to specific row,column
-        transferB = document.querySelector('#row_'+i+' .transferB')
+        service = document.querySelector('#row_'+i+'_ .serving-not'); //get to specific row,column
+    //    transferB = document.querySelector('#row_'+i+' .transferB')
 
         if(Math.round(Math.random())){//if 1
             tr.setAttribute("class","online");
-            service.innerHTML = 'Serving '+ Math.floor(Math.random()*10);
+            service.innerText = 'Serving '+ Math.floor(Math.random()*10);
         }
         else{//if 0
             tr.removeAttribute("class","online");
             service.innerHTML = 'Not serving</div>';
+            /*
             transferB.style.display = "none";
             service.style.display = "block";
+            */
+           $('#row_'+i+' .transferB').hide("fast");
+           $('#row_'+i+'_ div').show("fast");
         }
 
     }
@@ -153,4 +157,11 @@ $('tr').hover(
         }
     }
 );
+
+                                /*---PROBLEM---*/
+    /*With .hide() and .show(), instead of style.display = "none"/"block",
+        when hovering directly under button, staying on border toggles
+        between cursor in/out effects automatically
+    */
+
 });
