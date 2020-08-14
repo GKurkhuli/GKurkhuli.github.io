@@ -79,7 +79,7 @@ function randomStatus()
             transferB.style.display = "none";
             service.style.display = "block";
             */
-           $('#row_'+i+' .transferB').hide("fast");
+           $('#row_'+i+'_B').hide("fast");
            $('#row_'+i+'_ div').show("fast");
         }
 
